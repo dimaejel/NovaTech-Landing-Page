@@ -167,3 +167,11 @@ button:hover {
 .contact button {
     background-color: #2563eb;
 }
+/* Footer */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
