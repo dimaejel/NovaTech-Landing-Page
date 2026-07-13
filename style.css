@@ -118,3 +118,24 @@ button:hover {
     transform: translateY(-10px);
     transition: 0.3s;
 }
+/* About Section */
+
+.about {
+    padding: 70px 50px;
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #4b5563;
+}
