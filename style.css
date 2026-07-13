@@ -139,3 +139,31 @@ button:hover {
     font-size: 18px;
     color: #4b5563;
 }
+/* Contact Section */
+
+.contact {
+    padding: 70px 50px;
+    text-align: center;
+}
+
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.contact p {
+    color: #4b5563;
+    font-size: 18px;
+}
+
+
+.contact-info {
+    margin: 30px 0;
+}
+
+
+.contact button {
+    background-color: #2563eb;
+}
