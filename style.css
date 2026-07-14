@@ -114,9 +114,17 @@ button:hover {
 }
 
 
+.card {
+    background-color: #f3f4f6;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
 .card:hover {
     transform: translateY(-10px);
-    transition: 0.3s;
 }
 /* About Section */
 
@@ -214,4 +222,35 @@ footer {
 }
 html {
     scroll-behavior: smooth;
+}
+.menu-btn {
+     display: none;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+    padding: 0;
+}
+@media (max-width: 768px) {
+
+   @media (max-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+.nav-links.show {
+    display: flex;
+      flex-direction:column;
+       gap: 20px;
+}
+    nav ul {
+        display: none;
+        
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+}
 }
