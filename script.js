@@ -44,3 +44,13 @@ ScrollReveal().reveal('.technologies, .about, .contact', {
     origin: 'bottom'
 
 });
+const form = document.querySelector(".contact-form");
+
+
+form.addEventListener("submit", (e)=>{
+
+    e.preventDefault();
+
+    alert("Message sent successfully!");
+
+});

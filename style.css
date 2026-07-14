@@ -454,3 +454,57 @@ footer {
     transform: translateY(-10px);
 
 }
+/* Contact Form */
+
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 500px;
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+
+
+    padding: 15px;
+
+    font-size: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+
+}
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+
+
+
+.contact-form textarea {
+
+    resize: none;
+
+}
