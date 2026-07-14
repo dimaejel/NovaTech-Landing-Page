@@ -374,3 +374,83 @@ footer {
 
 
 }
+.card i {
+
+    font-size: 45px;
+
+    color: #2563eb;
+
+    margin-bottom: 20px;
+
+}
+/* Technologies Section */
+
+.technologies {
+
+    text-align: center;
+    padding: 70px 50px;
+
+}
+
+
+.technologies h2 {
+
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+.tech-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+
+.tech-card {
+
+    background-color: white;
+
+    width: 150px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+.tech-card i {
+
+    font-size: 45px;
+
+    color: #2563eb;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tech-card p {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+
+
+.tech-card:hover {
+
+    transform: translateY(-10px);
+
+}
