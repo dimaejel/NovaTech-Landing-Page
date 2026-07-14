@@ -1,3 +1,5 @@
+/* ================= GLOBAL ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,103 +19,171 @@ body {
 }
 
 
+
 /* ================= HEADER / NAVBAR ================= */
 
+
 header {
+
     background-color: #111827;
+
     padding: 20px 50px;
+
 }
 
 
 nav {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
 }
 
 
 nav h1 {
+
     color: white;
+
     font-size: 28px;
+
 }
+
 
 
 .nav-links {
+
     display: flex;
+
     list-style: none;
+
     gap: 30px;
+
 }
+
 
 
 .nav-links a {
+
     color: white;
+
     text-decoration: none;
+
     font-size: 18px;
+
+    transition: 0.3s;
+
 }
+
 
 
 .nav-links a:hover {
+
     color: #60a5fa;
+
 }
 
 
-/* Hamburger Button */
+
+/* Hamburger */
+
 
 .menu-btn {
+
     display: none;
+
     background: transparent;
+
     color: white;
+
     font-size: 30px;
+
     padding: 0;
+
 }
 
 
-/* ================= GENERAL BUTTON ================= */
+
+/* ================= BUTTONS ================= */
 
 
 button {
+
     background-color: #2563eb;
+
     color: white;
+
     border: none;
+
     padding: 15px 35px;
+
     font-size: 18px;
+
     border-radius: 8px;
+
     cursor: pointer;
+
     transition: 0.3s;
+
 }
+
 
 
 button:hover {
+
     background-color: #1d4ed8;
+
 }
 
 
-/* ================= SECTIONS ================= */
+
+/* ================= GENERAL SECTIONS ================= */
 
 
 main section {
+
     min-height: 80vh;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
+
     text-align: center;
+
     padding: 50px;
+
 }
+
 
 
 main h2 {
+
     font-size: 45px;
+
     margin-bottom: 20px;
+
 }
+
 
 
 main p {
+
     font-size: 20px;
+
     max-width: 600px;
-    margin-bottom: 30px;
+
     color: #4b5563;
+
+    margin-bottom: 30px;
+
 }
+
 
 
 /* ================= HERO ================= */
@@ -129,31 +199,114 @@ main p {
 
     color: white;
 
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    gap: 50px;
+
     animation: fadeIn 1s ease;
+
 }
+
+
+
+.hero-content {
+
+    max-width: 600px;
+
+}
+
 
 
 .hero h2 {
+
     color: white;
+
+    font-size: 55px;
+
+    font-weight: 700;
+
 }
+
 
 
 .hero p {
+
     color: white;
+
+    font-size: 20px;
+
+    margin: 25px 0;
+
 }
+
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+
+.secondary-btn {
+
+    background-color: transparent;
+
+    border: 2px solid white;
+
+    color: white;
+
+}
+
+
+
+.secondary-btn:hover {
+
+    background-color: white;
+
+    color: #2563eb;
+
+}
+
+
+
+.hero-image i {
+
+    font-size: 180px;
+
+    color: white;
+
+}
+
 
 
 @keyframes fadeIn {
 
+
     from {
+
         opacity: 0;
+
         transform: translateY(30px);
+
     }
 
 
     to {
+
         opacity: 1;
+
         transform: translateY(0);
+
     }
 
 }
@@ -164,20 +317,29 @@ main p {
 
 
 .services {
+
     padding: 70px 50px;
+
 }
+
 
 
 .services h2 {
+
     font-size: 40px;
+
 }
+
 
 
 .service-container {
 
     display: flex;
+
     justify-content: center;
+
     gap: 30px;
+
     flex-wrap: wrap;
 
 }
@@ -186,7 +348,7 @@ main p {
 
 .card {
 
-    background-color: #f3f4f6;
+    background-color: white;
 
     padding: 30px;
 
@@ -199,6 +361,19 @@ main p {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 
 }
+
+
+
+.card i {
+
+    font-size: 45px;
+
+    color: #2563eb;
+
+    margin-bottom: 20px;
+
+}
+
 
 
 .card h3 {
@@ -216,6 +391,94 @@ main p {
 }
 
 
+
+/* ================= TECHNOLOGIES ================= */
+
+
+.technologies {
+
+    text-align: center;
+
+    padding: 70px 50px;
+
+    background-color: #f9fafb;
+
+}
+
+
+
+.technologies h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.tech-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.tech-card {
+
+    background-color: white;
+
+    width: 150px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+
+.tech-card i {
+
+    font-size: 45px;
+
+    color: #2563eb;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.tech-card p {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+
+
+.tech-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
 /* ================= ABOUT ================= */
 
 
@@ -226,11 +489,13 @@ main p {
 }
 
 
+
 .about h2 {
 
     font-size: 40px;
 
 }
+
 
 
 .about p {
@@ -251,24 +516,60 @@ main p {
 }
 
 
-.contact-info {
 
-    margin: 30px 0;
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 500px;
 
 }
 
 
-.contact button {
 
-    background-color: #2563eb;
+.contact-form input,
+.contact-form textarea {
+
+    padding: 15px;
+
+    font-size: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+}
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+
+
+
+.contact-form textarea {
+
+    resize: none;
 
 }
 
 
 
 /* ================= FOOTER ================= */
-
-/* ================= FOOTER IMPROVEMENT ================= */
 
 
 footer {
@@ -284,6 +585,7 @@ footer {
 }
 
 
+
 footer h3 {
 
     font-size: 28px;
@@ -291,6 +593,7 @@ footer h3 {
     margin-bottom: 15px;
 
 }
+
 
 
 footer p {
@@ -358,11 +661,10 @@ footer p {
     }
 
 
+
     nav {
 
         flex-direction: row;
-
-        justify-content: space-between;
 
     }
 
@@ -402,6 +704,40 @@ footer p {
 
 
 
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+
+    .hero h2 {
+
+        font-size: 35px;
+
+    }
+
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+
+    .hero-image i {
+
+        font-size: 100px;
+
+    }
+
+
+
     main h2 {
 
         font-size: 35px;
@@ -433,254 +769,6 @@ footer p {
         width: 90%;
 
     }
-.hero {
 
-    flex-direction: column;
-
-    text-align: center;
-
-}
-
-
-
-.hero h2 {
-
-    font-size: 35px;
-
-}
-
-
-
-.hero-buttons {
-
-    justify-content: center;
-
-}
-
-
-
-.hero-image i {
-
-    font-size: 100px;
-
-}
-
-}
-.card i {
-
-    font-size: 45px;
-
-    color: #2563eb;
-
-    margin-bottom: 20px;
-
-}
-/* Technologies Section */
-
-.technologies {
-
-    text-align: center;
-    padding: 70px 50px;
-
-}
-
-
-.technologies h2 {
-
-    font-size: 40px;
-    margin-bottom: 40px;
-
-}
-
-
-.tech-container {
-
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-
-}
-
-
-.tech-card {
-
-    background-color: white;
-
-    width: 150px;
-
-    padding: 25px;
-
-    border-radius: 15px;
-
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-
-    transition: 0.3s;
-
-}
-
-
-.tech-card i {
-
-    font-size: 45px;
-
-    color: #2563eb;
-
-    margin-bottom: 15px;
-
-}
-
-
-.tech-card p {
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-}
-
-
-
-.tech-card:hover {
-
-    transform: translateY(-10px);
-
-}
-/* Contact Form */
-
-
-.contact-form {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 20px;
-
-    width: 100%;
-
-    max-width: 500px;
-
-}
-
-
-
-.contact-form input,
-.contact-form textarea {
-
-
-    padding: 15px;
-
-    font-size: 16px;
-
-    border: 1px solid #d1d5db;
-
-    border-radius: 8px;
-
-    font-family: inherit;
-
-
-}
-
-
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-
-    outline: none;
-
-    border-color: #2563eb;
-
-}
-
-
-
-.contact-form textarea {
-
-    resize: none;
-
-}
-/* ================= HERO IMPROVEMENT ================= */
-
-
-.hero {
-
-    display: flex;
-
-    flex-direction: row;
-
-    justify-content: space-around;
-
-    gap: 50px;
-
-}
-
-
-
-.hero-content {
-
-    max-width: 600px;
-
-}
-
-
-
-.hero h2 {
-
-    font-size: 55px;
-
-    font-weight: 700;
-
-}
-
-
-
-.hero p {
-
-    font-size: 20px;
-
-    margin: 25px 0;
-
-}
-
-
-
-.hero-buttons {
-
-    display: flex;
-
-    gap: 20px;
-
-}
-
-
-
-.secondary-btn {
-
-    background-color: transparent;
-
-    border: 2px solid white;
-
-    color: white;
-
-}
-
-
-
-.secondary-btn:hover {
-
-    background-color: white;
-
-    color: #2563eb;
-
-}
-
-
-
-.hero-image i {
-
-    font-size: 180px;
-
-    color: white;
 
 }
